@@ -70,3 +70,69 @@ print(min , 'мин - это', hours, 'час', min_remains, 'минут.')
 place_number = int(input())
 compartment = -place_number // 4
 print(-compartment)
+
+#14. Напишите программу, определяющую число десятков и единиц в двузначном числе.
+x = int(input())
+last_number = x % 10
+first_number = x // 10
+print(first_number)
+print(last_number)
+
+#15. Напишите программу, в которой рассчитывается сумма цифр двузначного числа.
+x = int(input())
+last_number = x % 10
+first_number = x // 10
+amount = first_number + last_number
+print(amount)
+
+#16. Напишите программу, которая печатает число, образованное при перестановке цифр двузначного числа.
+x = int(input())
+last_number = x % 10
+first_number = x // 10
+print(last_number, first_number, sep='')
+
+#17. Напишите программу, в которую вводится трехзначное число и которая выводит на экран его цифры (через запятую).
+x = int(input())
+last_number = x % 10
+second_number = (x % 10 ** 2) // 10 ** 1
+first_number = (x % 10 ** 3) // 10 ** 2
+print(first_number, second_number, last_number, sep=', ')
+
+x = int(input())
+last_number = x % 10
+second_number = (x // 10) % 10
+first_number = x // 100
+print(first_number, second_number, last_number, sep=',')
+
+#18. Напишите программу, которая рассчитывает сумму и произведение цифр положительного трёхзначного числа и выводит текст в следующем формате: Сумма цифр = <сумма цифр>. Произведение цифр = <произведение цифр>
+x = int(input())
+number3 = x % 10
+number2 = (x // 10) % 10
+number1 = x // 100
+amount = number1 + number2 + number3
+multiplication = number1 * number2 * number3
+print('Сумма цифр =', amount)
+print('Произведение цифр =', multiplication)
+
+#Дано трехзначное число abc, в котором все цифры различны. Напишите программу, которая выводит шесть чисел, образованных при перестановке цифр заданного числа. Программа должна вывести шесть чисел, образованных при перестановке цифр заданного числа, в следующем порядке (каждое на новой строке): abc, acb, bac, bca, cab, cba.
+x = int(input())
+c = x % 10
+b = (x // 10) % 10
+a = x // 100
+print(a, b, c, sep='')
+print(a, c, b, sep='')
+print(b, a, c, sep='')
+print(b, c, a, sep='')
+print(c, a, b, sep='')
+print(c, b, a, sep='')
+
+#Напишите программу для нахождения цифр четырёхзначного числа.
+x = int(input())
+number4 = x % 10
+number3 = (x // 10) % 10
+number2 = (x // 100) % 10
+number1 = (x // 1000) % 10
+print('Цифра в позиции тысяч равна', number1)
+print('Цифра в позиции сотен равна', number2)
+print('Цифра в позиции десятков равна', number3)
+print('Цифра в позиции единиц равна', number4)
