@@ -448,3 +448,46 @@ number = int(input('Введите число: '))
 number_house = number % 10
 number_apartment = number // 10
 print(number_house, number_apartment)
+
+#50. #Напишите программу, которая выводит прямоугольник, по периметру состоящий из звёздочек (*).Примечание. Высота и ширина прямоугольника равны 4 и 17 звёздочкам соответственно.
+a = '*'
+b = ' '
+print(17 * a)
+print(a, 15 * b, a, sep='')
+print(a, 15 * b, a, sep='')
+print(17 * a)
+
+#51. Напишите программу, которая считывает два целых числа a и b и выводит на экран квадрат суммы (a+b)2 и сумму квадратов a2 +b2 этих чисел в следующем формате: Квадрат суммы <a> и <b> равен <квадрат суммы a и b>. Сумма квадратов <a> и <b> равна <сумма квадратов a и b>.
+
+a, b = int(input()), int(input())
+print('Квадрат суммы', a, 'и', b, 'равен', (a + b) ** 2)
+print ('Сумма квадратов', a, 'и', b, 'равна', a ** 2 + b ** 2)
+
+#52. На числовой прямой даны два отрезка: [a1;b1] и [a2;b2]. Напишите программу, которая находит их пересечение.
+a1, b1, a2, b2 = int(input()), int(input()), int(input()), int(input())
+if a1 == b2:
+    print(a1)
+elif a2 == b1:
+    print(a2)
+elif a1 == a2: 
+    if b1 == b2:
+        print(a1, b1)
+    elif b1 < b2:
+        print(a1, b1)
+    elif b2 < b1:
+        print(a1, b2)
+elif b1 == b2:
+    if a1 < a2:
+        print(a2, b1)
+    elif a2 < a1:
+        print(a1, b1)
+elif b1 < a2 or b2 < a1:
+    print('пустое множество')
+elif a1 < a2 < b1 and b1 < b2:
+    print(a2, b1) 
+elif a2 < a1 < b2 and b2 < b1:
+    print(a1, b2)
+elif a1 < a2 and b2 < b1:
+    print(a2, b2)
+elif a2 < a1 and b1 < b2:
+    print(a1, b1)
