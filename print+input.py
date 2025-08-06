@@ -496,3 +496,9 @@ elif a2 < a1 and b1 < b2:
 a, b = float(input()), float(input())
 s = 0.5*a*b
 print(s)
+
+#54. Напишите программу, которая считывает длины двух катетов в прямоугольном треугольнике и выводит его площадь.
+s, v1, v2 = float(input()), float(input()), float(input())
+v = v1 + v2
+time = s / v
+print(time)
