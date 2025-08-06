@@ -522,3 +522,12 @@ if n <= 2:
 else:
     print(21+(n-2)*4)
 
+#58. Дано положительное действительное число. Выведите его первую цифру после десятичной точки.
+n = float(input())
+print(int((n*10)%10))
+
+#59. Дано положительное действительное число. Выведите его дробную часть.
+n = float(input())
+integer = int(n)
+fractional_part = n-integer
+print(fractional_part)
