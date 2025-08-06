@@ -531,3 +531,39 @@ n = float(input())
 integer = int(n)
 fractional_part = n-integer
 print(fractional_part)
+
+#60.Напишите программу, которая находит наименьшее и наибольшее из пяти чисел и выводит текст в следующем формате: Наименьшее число = <наименьшее число>. Наибольшее число = <наибольшее число>
+a, b, c, d, f = int(input()), int(input()), int(input()), int(input()), int(input()),
+print('Наименьшее число =', min(a, b, c, d, f))
+print('Наибольшее число =', max(a, b, c, d, f))
+
+#61. Напишите программу, которая упорядочивает три числа от большего к меньшему.
+
+a, b, c = int(input()), int(input()), int(input())
+min = min(a, b, c)
+max = max (a, b, c)
+if a == b:
+    print(max)
+    print(a)
+    print(min)
+elif b ==c:
+        print(max)
+        print(b)
+        print(min)
+elif a == c:
+        print(max)
+        print(a)
+        print(min)
+elif min<a<max:
+    print(max)
+    print(a)
+    print(min)
+elif min<b<max:
+    print(max)
+    print(b)
+    print(min)
+elif min<c<max:
+    print(max)
+    print(c)
+    print(min)
+
