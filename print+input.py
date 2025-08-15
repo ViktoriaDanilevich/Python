@@ -583,3 +583,8 @@ else:
 a1, a2, a3, a4, a5 = float(input()), float(input()), float(input()), float(input()), float(input())
 result = abs(a1)+abs(a2)+abs(a3)+abs(a4)+abs(a5)
 print(result)
+
+#64. Напишите программу, определяющую манхэттенское расстояние между двумя точками, координаты которых заданы.
+p1, p2, q1, q2 = int(input()), int(input()), int(input()), int(input())
+distance = abs(p1-q1) + abs(p2-q2)
+print(distance)
