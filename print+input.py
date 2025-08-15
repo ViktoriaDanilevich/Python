@@ -588,3 +588,9 @@ print(result)
 p1, p2, q1, q2 = int(input()), int(input()), int(input()), int(input())
 distance = abs(p1-q1) + abs(p2-q2)
 print(distance)
+
+#65. Напишите программу, которая считывает с клавиатуры две строки – имя и фамилию пользователя – и выводит фразу.
+name = input()
+surname = input()
+text = 'Hello '+name+' '+surname+'! You have just delved into Python'
+print(text)
