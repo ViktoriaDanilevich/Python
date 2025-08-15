@@ -617,3 +617,10 @@ elif len_3 < len_2 < len_1:
     print(city3, city1, sep='\n')
 elif len_3 < len_1 < len_2:
     print(city3, city2, sep='\n')
+
+#68. Вводятся 3 строки в случайном порядке. Напишите программу, которая выясняет, можно ли из длин этих строк построить арифметическую прогрессию.
+a, b, c = len(input()), len(input()), len(input())
+if (2*b-c-a)*(2*c-b-a)*(2*a-b-c) == 0:
+    print('YES')
+else:
+    print('NO')
