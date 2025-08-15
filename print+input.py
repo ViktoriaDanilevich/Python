@@ -594,3 +594,8 @@ name = input()
 surname = input()
 text = 'Hello '+name+' '+surname+'! You have just delved into Python'
 print(text)
+
+#66. Напишите программу, которая считывает с клавиатуры название футбольной команды и выводит информацию о ней.
+team = input()
+length = len(team)
+print('Футбольная команда', team, 'имеет длину', length, 'символов')
