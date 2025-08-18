@@ -668,3 +668,14 @@ geometric_mean = math.sqrt(a*b)
 harmonic_mean = 2*a*b / (a+b)
 quadratic_mean = math.sqrt ((a**2 + b**2)/2)
 print(arithmetic_mean, geometric_mean, harmonic_mean, quadratic_mean, sep='\n')
+
+
+#75. Напишите программу, вычисляющую значение тригонометрического выражения по заданному числу градусов x.
+import math
+x = float(input())
+rad = math.radians(x)
+sin = math.sin(rad)
+cos = math.cos(rad)
+tan = math.tan(rad)
+res = sin + cos + tan**2
+print(res)
