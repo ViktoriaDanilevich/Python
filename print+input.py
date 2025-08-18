@@ -659,3 +659,12 @@ r = float(input())
 s = math.pi * math.pow(r, 2)
 c = 2 * math.pi * r
 print(s, c, sep='\n')
+
+#74. На вход программе подаются два положительных действительных числа a и b​, каждое на отдельной строке. Программа должна вывести 4 числа (каждое на отдельной строке) – среднее арифметическое, геометрическое, гармоническое и квадратичное.
+import math
+a, b = float(input()), float(input())
+arithmetic_mean = (a+b) / 2
+geometric_mean = math.sqrt(a*b)
+harmonic_mean = 2*a*b / (a+b)
+quadratic_mean = math.sqrt ((a**2 + b**2)/2)
+print(arithmetic_mean, geometric_mean, harmonic_mean, quadratic_mean, sep='\n')
