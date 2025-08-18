@@ -638,3 +638,10 @@ if 'суббота' in text or 'воскресенье' in text:
     print('YES')
 else:
     print('NO')
+
+#71. Будем считать email адрес корректным, если в нём есть символы собачки (@) и точки (.). Напишите программу, проверяющую корректность email адреса.
+email = input()
+if '@' in email and '.' in email:
+    print('YES')
+else:
+    print('NO')
