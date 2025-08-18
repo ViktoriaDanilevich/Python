@@ -645,3 +645,10 @@ if '@' in email and '.' in email:
     print('YES')
 else:
     print('NO')
+
+#72. Напишите программу, определяющую евклидово расстояние между двумя точками, координаты которых заданы.
+import math
+x1, y1, x2, y2 = float(input()), float(input()), float(input()), float(input())
+num = ((x1-x2)**2) + ((y1-y2)**2)
+p = math.sqrt(num)
+print(p)
