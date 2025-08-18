@@ -652,3 +652,10 @@ x1, y1, x2, y2 = float(input()), float(input()), float(input()), float(input())
 num = ((x1-x2)**2) + ((y1-y2)**2)
 p = math.sqrt(num)
 print(p)
+
+#73. Напишите программу, определяющую площадь круга и длину окружности по заданному радиусу R.
+import math
+r = float(input())
+s = math.pi * math.pow(r, 2)
+c = 2 * math.pi * r
+print(s, c, sep='\n')
