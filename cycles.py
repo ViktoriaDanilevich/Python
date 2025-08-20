@@ -7,3 +7,8 @@ text = input()
 lot = int(input())
 for a in range (lot):
     print(text)
+
+#3. На вход программе подаётся натуральное число n (1≤n≤20). Напишите программу, которая печатает звёздный прямоугольник размерами n×19.
+num = int(input())
+for a in range(num):
+    print('*'*19)
